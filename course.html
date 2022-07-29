@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMedu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMedu()"></i>
+        </nav>
+       <h1>Our Course</h1>
+    </section>
+    
+    <!------course----->
+    <section class="course">
+        <h1>Other Courses We Offer</h1>
+        <p>A course is a syllabus item offered by the University</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Engineering</h3>
+                <p>Engineering is a stream of education that involves the application of Science, 
+                    Technology, and Mathematics to innovate, design, develop and maintain machines, 
+                    structures, software, hardware, and systems & processes. </p>
+            </div>
+            <div class="course-col">
+                <h3>Law</h3>
+                <p>The subjects in LLB degree are criminal law, IPR, labour and work laws, family law,
+                     criminal law, the law of torts, consumer protection act, constitutional law, 
+                     law of evidence, human rights, international law, trade laws, environmental law etc. </p>
+            </div>
+            <div class="course-col">
+                <h3>Arts</h3>
+                <p>Arts or Humanities is one of the popular streams in higher secondary classes which 
+                    offer a plethora of courses at graduation level. The subjects that come under Humanities 
+                    stream are History, Geography, Political Science, Psychology, Sociology and each subject offers 
+                    enormous career opportunities. </p>
+            </div>
+        </div>
+   </section>
+
+   <!-----------facilities--------->
+   <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Academic facilities means the physical facilities of such as classrooms, offices, laboratories, libraries,etc.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/classroom.jpg">
+            <h3>Classroom</h3>
+            <p>A classroom or schoolroom is a learning space in which both children and adults learn.
+                 Classrooms are found in educational institutions of all kinds, ranging from
+                  preschools to universities, and may also be found in other places where education or
+                   training is provided, such as corporations and religious and humanitarian organizations.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/tttt.jpg">
+            <h3>Teaching Staff</h3>
+            <p>Teaching staff include professional personnel directly involved in 
+                teaching students, including classroom teachers, special education teachers 
+                and other teachers who work with students as a whole class, in small groups, or 
+                in one-to-one teaching.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/seminar.jpg" height="50%">
+            <h3>Seminar hall</h3>
+            <p>The College has a well-equipped air-conditioned seminar hall with state 
+                of the art equipments. They include Computer, Sound system, LCD projector, 
+                Overhead projector, etc. The students and teachers make use of this facility 
+                to make project presentations, to conduct interactive sessions, and guest lectures.</p>
+        </div>
+    </div>
+</section>
+   
+   <!---------footer----------->
+   <section class="footer">
+       <h4>About Us</h4>
+       <p>We provide you the best education in the world.</p>
+        <div class="icons"> 
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>Made With<i class="fa fa-heart-o"></i> by Neeraj Kumar</p>
+   </section>
+
+
+
+
+
+
+
+
+
+    <!-----------JavaScript for Toogle Menu---------->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+        function showMedu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
